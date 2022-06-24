@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Financial.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc CMakeFiles\Financial.dir/objects.a @CMakeFiles\Financial.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Financial.dir/objects.a -Wl,--no-whole-archive -o Financial.exe -Wl,--out-implib,libFinancial.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Financial.dir\linklibs.rsp

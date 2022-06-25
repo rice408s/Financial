@@ -286,6 +286,7 @@ CMakeFiles/Financial.dir/case/case.c.obj
  C:/code/c/financial/financial/financial.h
  C:/code/c/financial/case/case.h
  C:/code/c/financial/system.h
+ C:/code/c/financial/user/user.h
 
 CMakeFiles/Financial.dir/db/db.c.obj
  C:/code/c/financial/db/db.c
@@ -851,6 +852,7 @@ CMakeFiles/Financial.dir/financial/financial.c.obj
  C:/code/c/financial/financial/financial.h
  C:/code/c/financial/case/case.h
  C:/code/c/financial/system.h
+ C:/code/c/financial/user/user.h
 
 CMakeFiles/Financial.dir/main.c.obj
  C:/code/c/financial/main.c
@@ -1137,6 +1139,7 @@ CMakeFiles/Financial.dir/main.c.obj
  C:/code/c/financial/financial/financial.h
  C:/code/c/financial/case/case.h
  C:/code/c/financial/system.h
+ C:/code/c/financial/user/user.h
  C:/code/c/financial/system.h
 
 CMakeFiles/Financial.dir/menu/menu.c.obj
@@ -1452,6 +1455,7 @@ CMakeFiles/Financial.dir/run/run.c.obj
  C:/code/c/financial/financial/financial.h
  C:/code/c/financial/case/case.h
  C:/code/c/financial/system.h
+ C:/code/c/financial/user/user.h
 
 CMakeFiles/Financial.dir/user/user.c.obj
  C:/code/c/financial/user/user.c
@@ -1738,5 +1742,6 @@ CMakeFiles/Financial.dir/user/user.c.obj
  C:/code/c/financial/financial/financial.h
  C:/code/c/financial/case/case.h
  C:/code/c/financial/system.h
+ C:/code/c/financial/user/user.h
  C:/code/c/financial/user/user.h
 

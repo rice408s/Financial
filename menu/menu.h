@@ -1,5 +1,5 @@
 
 #include "../system.h"
 
-void loginMenu();
+void mainMenu();
 void appMenu();

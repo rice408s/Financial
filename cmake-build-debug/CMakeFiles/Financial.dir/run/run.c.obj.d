@@ -276,4 +276,5 @@ CMakeFiles/Financial.dir/run/run.c.obj: C:\code\c\financial\run\run.c \
  C:/PROGRA~1/MySQL/MYSQLS~1.0/include/errmsg.h \
  C:/code/c/financial/system.h C:/code/c/financial/menu/menu.h \
  C:/code/c/financial/system.h C:/code/c/financial/financial/financial.h \
- C:/code/c/financial/case/case.h C:/code/c/financial/system.h
+ C:/code/c/financial/case/case.h C:/code/c/financial/system.h \
+ C:/code/c/financial/user/user.h

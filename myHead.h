@@ -7,3 +7,4 @@
 #include "menu/menu.h"
 #include "financial/financial.h"
 #include "case/case.h"
+#include "user/user.h"

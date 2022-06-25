@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\code\c\Financial -B C:\code\c\Financial\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\code\c\financial -B C:\code\c\financial\cmake-build-debug
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/code/c/financial/cmake-build-debug

@@ -391,4 +391,85 @@ int signIn() {
     }
 }
 ```
+### 用户的修改
+```c
+int changePwd(){
+    printf("请输入用户名:");
+    scanf("%s", &user.userName);
+    strcpy(financialName,user.userName);
+    getchar();
+    printf("请输入用户密码:");
+    scanf("%s", &user.userPwd);
+    strcpy(queryUser,v2);
+    strcat(queryUser, user.userName);
+    strcat(queryUser, "\";");
+    getchar();
+
+
+    if (mysql_real_query(&mysql, queryUser, (unsigned long) strlen(queryUser))) {
+        fprintf(stderr, "mysql_real_query failure!\n");
+        return 0;
+    } else {
+        result = mysql_store_result(&mysql);
+        if (result == NULL) {
+            fprintf(stderr, "mysql_store_result failure！\n");
+            return 0;
+        } else {
+            printf("请输入新密码:");
+            scanf("%s",newPwd);
+            getchar();
+            row = mysql_fetch_row(result);
+            while (row) {
+                if (strcmp(user.userPwd, row[0]) == 0) {
+                    strcpy(updateUser,v3);
+                    strcat(updateUser,newPwd);
+                    strcat(updateUser,"\" WHERE `name`= \"");
+                    strcat(updateUser,user.userName);
+                    strcat(updateUser,"\";");
+                    mysql_query(&mysql,updateUser);
+                    return 1;
+                } else {
+                    return 0;
+                }
+                row = mysql_fetch_row(result);
+            }
+        }
+    }
+}
+```
+
+## 数据从数据库写入到文件中
+
+### 写入
+
+```c
+#include "saveToFile.h"
+
+FILE *file;
+const char *readAllInf = "select * from inf";
+
+void saveData(){
+    file= fopen("financial.txt","w+");
+    if (mysql_real_query(&mysql, readAllInf, (unsigned long) strlen(readAllInf))) {
+        fprintf(stderr, "mysql_real_query failure!\n");
+    } else {
+        result = mysql_store_result(&mysql);
+        if (result == NULL) {
+            fprintf(stderr, "mysql_store_result failure！\n");
+        } else {
+            fputs("序号      创 建 时 间          更 新 时 间      类型 姓名    金额  备注\n",file);
+            while (row = mysql_fetch_row(result)) {
+                for (int i = 0; i < 7; ++i) {
+                    fputs(row[i],file);
+                    fputs("\t",file);
+                }
+                fputs("\n",file);
+
+            }
+        }
+    }
+    fclose(file);
+    mysql_close(&mysql);//断开与mysql的连接
+}
+```
 

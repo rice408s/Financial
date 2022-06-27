@@ -68,7 +68,7 @@ int signUp() {
     scanf("%s", inputPwd);
     getchar();
     if (strcmp(admin, inputAdmin) != 0 || strcmp(adminPwd, inputPwd) != 0) {
-        printf("管理员账号或密码错误");
+        printf("管理员账号或密码错误\n");
         return 0;
     } else {
         printf("登录成功\n");

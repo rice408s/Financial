@@ -43,30 +43,35 @@ void queryAllInf() {
                 printf("%s\t%s\t%s\t%s\t%s\t%s\t%s\n\n",
                        row[0], row[1], row[2], row[3], row[4], row[5], row[6]);
             }
-            printf("总余额:%.2f\n",sum);
+            printf("总余额:%.2f\n", sum);
         }
     }
 }
 
 void insertInf() {
+
     printf("请输入类型:");
     scanf("%s", &inf.type);
     printf("请输入金额:");
     scanf("%s", &inf.bedRag);
-    printf("请输入备注:");
-    scanf("%s", &inf.remark);
-    //拼接插入数据的sql语句
-    strcpy(sqlInsert, s1);
-    strcat(sqlInsert, inf.type);
-    strcat(sqlInsert, "\",\"");
-    strcat(sqlInsert, financialName);
-    strcat(sqlInsert, "\",");
-    strcat(sqlInsert, inf.bedRag);
-    strcat(sqlInsert, ",\"");
-    strcat(sqlInsert, inf.remark);
-    strcat(sqlInsert, "\");");
-    //执行sql语句插入数据
-    mysql_query(&mysql, sqlInsert);
+    if (fabs(atof(inf.bedRag)) < 0.01) {
+        printf("数据非法\n");
+    } else {
+        printf("请输入备注:");
+        scanf("%s", &inf.remark);
+        //拼接插入数据的sql语句
+        strcpy(sqlInsert, s1);
+        strcat(sqlInsert, inf.type);
+        strcat(sqlInsert, "\",\"");
+        strcat(sqlInsert, financialName);
+        strcat(sqlInsert, "\",");
+        strcat(sqlInsert, inf.bedRag);
+        strcat(sqlInsert, ",\"");
+        strcat(sqlInsert, inf.remark);
+        strcat(sqlInsert, "\");");
+        //执行sql语句插入数据
+        mysql_query(&mysql, sqlInsert);
+    }
     getchar();
 }
 
@@ -105,6 +110,9 @@ void updateInf() {
 
         printf("请输入修改后的数据:");
         scanf("%s", Data);
+        if (chooseType=='2'&&fabs(atof(Data)) < 0.01) {
+            printf("数据非法\n");
+        }
         strcat(sqlUpdate, Data);
 
         if (chooseType != '2') {
@@ -120,7 +128,7 @@ void updateInf() {
 }
 
 void queryInf() {
-    sum=0;
+    sum = 0;
     strcpy(sqlQuery, "select * from inf where ");
     printf("\t1.按类型查找\t2.按姓名查找\t3.按金额查找\t4.按备注查找\n选择查询方式:");
     chooseType = getchar();
@@ -161,11 +169,11 @@ void queryInf() {
         } else {
             printf("序号        创 建 时 间                更 新 时 间         类型    姓名金额     备注\n");
             while (row = mysql_fetch_row(result)) {
-                sum+= atof(row[5]);
+                sum += atof(row[5]);
                 printf("%s\t%s\t%s\t%s\t%s\t%s\t%s\n\n",
                        row[0], row[1], row[2], row[3], row[4], row[5], row[6]);
             }
-            printf("总余额:%.2f",sum);
+            printf("总余额:%.2f", sum);
         }
     }
 }

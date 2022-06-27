@@ -9,7 +9,7 @@ link_directories(C:\\Program\ Files\\MySQL\\MySQL\ Server\ 8.0\\lib)
 
 add_executable(Financial main.c system.h run/run.c run/run.h db/db.h db/db.c menu/menu.c
         menu/menu.h case/case.c case/case.h myHead.h financial/financial.c financial/financial.h
-        user/user.c user/user.h)
+        user/user.c user/user.h saveToFile/saveToFile.c saveToFile/saveToFile.h)
 
 link_libraries(libmysql.lib libmysql.dll)
 target_link_libraries(Financial libmysql)

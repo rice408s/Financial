@@ -2,6 +2,4 @@
 #include "system.h"
 int main() {
     run();
-
-
 }

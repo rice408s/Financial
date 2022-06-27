@@ -272,6 +272,30 @@ run/run.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Financial.dir\build.make CMakeFiles/Financial.dir/run/run.c.s
 .PHONY : run/run.c.s
 
+saveToFile/saveToFile.obj: saveToFile/saveToFile.c.obj
+.PHONY : saveToFile/saveToFile.obj
+
+# target to build an object file
+saveToFile/saveToFile.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Financial.dir\build.make CMakeFiles/Financial.dir/saveToFile/saveToFile.c.obj
+.PHONY : saveToFile/saveToFile.c.obj
+
+saveToFile/saveToFile.i: saveToFile/saveToFile.c.i
+.PHONY : saveToFile/saveToFile.i
+
+# target to preprocess a source file
+saveToFile/saveToFile.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Financial.dir\build.make CMakeFiles/Financial.dir/saveToFile/saveToFile.c.i
+.PHONY : saveToFile/saveToFile.c.i
+
+saveToFile/saveToFile.s: saveToFile/saveToFile.c.s
+.PHONY : saveToFile/saveToFile.s
+
+# target to generate assembly for a file
+saveToFile/saveToFile.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Financial.dir\build.make CMakeFiles/Financial.dir/saveToFile/saveToFile.c.s
+.PHONY : saveToFile/saveToFile.c.s
+
 user/user.obj: user/user.c.obj
 .PHONY : user/user.obj
 
@@ -323,6 +347,9 @@ help:
 	@echo ... run/run.obj
 	@echo ... run/run.i
 	@echo ... run/run.s
+	@echo ... saveToFile/saveToFile.obj
+	@echo ... saveToFile/saveToFile.i
+	@echo ... saveToFile/saveToFile.s
 	@echo ... user/user.obj
 	@echo ... user/user.i
 	@echo ... user/user.s

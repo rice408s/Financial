@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Financial.dir/menu/menu.c.obj.d"
   "CMakeFiles/Financial.dir/run/run.c.obj"
   "CMakeFiles/Financial.dir/run/run.c.obj.d"
+  "CMakeFiles/Financial.dir/saveToFile/saveToFile.c.obj"
+  "CMakeFiles/Financial.dir/saveToFile/saveToFile.c.obj.d"
   "CMakeFiles/Financial.dir/user/user.c.obj"
   "CMakeFiles/Financial.dir/user/user.c.obj.d"
   "Financial.exe"

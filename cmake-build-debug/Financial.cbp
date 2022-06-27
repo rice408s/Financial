@@ -120,6 +120,12 @@
 		<Unit filename="C:/code/c/financial/run/run.h">
 			<Option target="Financial"/>
 		</Unit>
+		<Unit filename="C:/code/c/financial/saveToFile/saveToFile.c">
+			<Option target="Financial"/>
+		</Unit>
+		<Unit filename="C:/code/c/financial/saveToFile/saveToFile.h">
+			<Option target="Financial"/>
+		</Unit>
 		<Unit filename="C:/code/c/financial/system.h">
 			<Option target="Financial"/>
 		</Unit>

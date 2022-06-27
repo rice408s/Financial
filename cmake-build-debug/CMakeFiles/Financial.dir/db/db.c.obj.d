@@ -263,6 +263,7 @@ CMakeFiles/Financial.dir/db/db.c.obj: C:\code\c\financial\db\db.c \
  C:/PROGRA~1/MySQL/MYSQLS~1.0/include/mysql_time.h \
  C:/PROGRA~1/MySQL/MYSQLS~1.0/include/errmsg.h \
  C:/code/c/financial/system.h \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/math.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \

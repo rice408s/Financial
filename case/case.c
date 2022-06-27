@@ -21,6 +21,7 @@ void makeCase() {
                     printf("登陆失败，请重试\n");
                 }
                 break;
+
             case '2':
                 signUp();//注册
                 break;

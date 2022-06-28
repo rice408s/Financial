@@ -49,7 +49,6 @@ void queryAllInf() {
 }
 
 void insertInf() {
-
     printf("请输入类型:");
     scanf("%s", &inf.type);
     printf("请输入金额:");
